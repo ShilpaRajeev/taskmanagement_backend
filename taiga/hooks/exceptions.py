@@ -1,0 +1,3 @@
+
+class ActionSyntaxException(Exception):
+    pass
