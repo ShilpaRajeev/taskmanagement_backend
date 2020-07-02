@@ -14,4 +14,5 @@ python manage.py sample_data
 
 **IMPORTANT: Runs with python 3.5+**
 
+http://taigaio.github.io/taiga-doc/dist/setup-development.html
 
