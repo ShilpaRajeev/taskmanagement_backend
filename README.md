@@ -3,10 +3,11 @@ iClassroom Task and Project Management is a simple and effective tool for organi
 ## Setup development environment ##
 
 Install dependencies
+```
 sudo apt-get install -y build-essential binutils-doc autoconf flex bison libjpeg-dev
 sudo apt-get install -y libfreetype6-dev zlib1g-dev libzmq3-dev libgdbm-dev libncurses5-dev
 sudo apt-get install -y automake libtool libffi-dev libssl-dev curl git tmux gettext
-
+```
 Setup Database
 
 Install postgresql
