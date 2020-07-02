@@ -10,17 +10,17 @@ sudo apt-get install -y automake libtool libffi-dev libssl-dev curl git tmux get
 Setup Database
 
 Install postgresql
-
+```
 sudo apt-get install -y postgresql postgresql-contrib
 sudo apt-get install -y postgresql-doc postgresql-server-dev-all
-
+```
 Setup initial User, database and permissions
-
+```
 sudo -u postgres psql -c "CREATE ROLE name LOGIN PASSWORD ' ';"
 sudo -u postgres createdb name -O name --encoding='utf-8' --locale=en_US.utf8 --template=template0
 echo 'local all name peer' | sudo -u postgres tee -a $(sudo -u postgres psql -t -P format=unaligned -c 'show hba_file') > /dev/null
 sudo service postgresql reload
-
+```
 Create your own environment with a settings/local.py file and overwrite the settings/common.py.
 For a basic configuration that works simply copy this settings/local.py to settings/local.py( remember to edit your postgresql password).
 
