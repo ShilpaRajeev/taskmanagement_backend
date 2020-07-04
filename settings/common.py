@@ -50,7 +50,7 @@ USE_L10N = True
 LANGUAGE_CODE = 'en-us'
 
 # Languages we provide translations for, out of the box.
-#LANGUAGES = [
+LANGUAGES = [
     #("af", "Afrikaans"),  # Afrikaans
     #("ar", "العربية‏"),  # Arabic
     #("ast", "Asturiano"),  # Asturian
